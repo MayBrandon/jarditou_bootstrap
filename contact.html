@@ -35,53 +35,90 @@
   </div>
 </nav>
     <img class="banniere" src="/assets/img/branding/promotion.jpg" alt="">
-    <div class="container-fluid">
+    <div class="container">
         <form>
-            <div class="row">
-                <div class="col">
-                    <label for="">Prenom</label>
-                  <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-                </div>
-                <div class="col">
-                    <label for="">Nom</label>
-                  <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-                </div>
-              </div>
-              
-            <div class="form-group">
-              <label for="inputAddress">Addresse</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+          <p style="margin-top: 10px;">* Ces zones sont obligatoires</p>
+            <h1>Vos Coordonnées</h1>
+
+            <br>
+
+            <div class="form-floating mb-3">
+              <input id="floatingInput" type="text" class="form-control form-control-lg" placeholder="Prenom" aria-label="Prenom">
+              <label for="floatingInput">Votre prenom :</label>
             </div>
-            <div class="form-group">
-              <label for="inputAddress2">Address 2</label>
-              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+
+            <div class="form-floating mb-3">
+              <input id="floatingInput" type="text" class="form-control form-control-lg" placeholder="nom" aria-label="nom">
+              <label for="floatingInput">Votre nom :</label>
             </div>
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="inputCity">City</label>
-                <input type="text" class="form-control" id="inputCity">
-              </div>
-              <div class="form-group col-md-4">
-                <label for="inputState">State</label>
-                <select id="inputState" class="form-control">
-                  <option selected>Choose...</option>
-                  <option>...</option>
-                </select>
-              </div>
-              <div class="form-group col-md-2">
-                <label for="inputZip">Zip</label>
-                <input type="text" class="form-control" id="inputZip">
-              </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                Féminin
+              </label>
             </div>
-            <div class="form-group">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">
-                  Check me out
-                </label>
-              </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
+                Masculin
+              </label>
             </div>
-            <button type="submit" class="btn btn-primary">Sign in</button>
+              <br>
+
+            <div class="form-floating mb-3">
+              <input type="date" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Date de naissance :</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingInput" placeholder="Votre adresse">
+              <label for="floatingInput">Votre adresse :</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingInput" placeholder="">
+              <label for="floatingInput">Ville :</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Votre mail :</label>
+            </div>
+
+            <h1>Votre demande</h1>
+
+            <br>
+
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Veuillez sélectionner un sujet</option>
+              <option value="1">sujet n°1</option>
+              <option value="2">sujet n°2</option>
+              <option value="3">sujet n°3</option>
+            </select>
+
+            <br>
+
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+              <label for="floatingTextarea2">Votre question :</label>
+            </div>
+
+            <br>
+          
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+              <label class="form-check-label" for="flexCheckIndeterminate">
+                J'accepte le traitement informatique de ce formulaire.
+              </label>
+            </div>
+
+            <br>
+
+            <div class="d-grid gap-2 d-md-block">
+              <button class="btn btn-dark" type="submit">Envoyer</button>
+              <button class="btn btn-dark" type="reset">Annuler</button>
+            </div>
         </form>
     </div>
 
